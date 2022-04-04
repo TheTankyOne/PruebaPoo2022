@@ -1,4 +1,5 @@
 from datetime import date
+from faulthandler import cancel_dump_traceback_later
 
 class Persona():
     def __init__(self, nombre, fecha_nacimiento, rut):
@@ -33,5 +34,9 @@ class Persona():
         value = 11 - sum([ int(a)*int(b)  for a,b in zip(str(rut).zfill(8), '32765432')])%11
         return {10: 'K', 11: '0'}.get(value, str(value))
 
-    def calcular_Edad(self):
-        
+    def calcular_Edad(self, Edad):
+        if Edad >= 18:
+            print ("Es mayor de edad")
+        else:
+            print ("es menor de edad")
+            
