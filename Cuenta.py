@@ -29,6 +29,16 @@ class Cuenta():
             return
         else:
             print ("el nuevo monto es: " + (x+saldo)) 
+    
+    def retiro(self, saldo, x):
+        print("ingrese el monto que quiera retirar: ")
+        input (x)
+        if x <= 0 or x >= saldo:
+            print ("el monto no puede ser igual a 0, o no puede ser mayor que el saldo acutal")
+            return
+        else:
+            print ("el nuevo monto es: " + (saldo-x)) 
+    
 
     def  informacion_Cuenta(self, titular, saldo):
         return print("El nombre es " + titular + " y el saldo es " + saldo)
