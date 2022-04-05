@@ -36,7 +36,7 @@ class Persona():
 
     def Edad(fecha_nacimiento):
         today = date.today()
-        Edad = today.year - fecha_nacimiento,.year - ((today.month, today.day) < (fecha_nacimiento,.month, fecha_nacimiento,.day))
+        Edad = today.year - fecha_nacimiento.year - ((today.month, today.day) < (fecha_nacimiento.month, fecha_nacimiento.day))
         return Edad
 
     
