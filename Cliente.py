@@ -8,5 +8,5 @@ class Cliente():
     def  password(self):
         self.password = [10]
 
-    def productos_bancarios(self):
+    def productos_bancarios(self, productos_bancarios):
         self.productos_bancarios = productos_bancarios
