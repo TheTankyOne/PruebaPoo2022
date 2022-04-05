@@ -2,7 +2,7 @@ from Cliente import Cliente
 
 class Cuenta():
     def __init__(self, titular, saldo, movimientos):
-        super.__init__(titular)
+        self.titular = titular
         self.saldo = float(saldo)
         self.movimientos = movimientos
 
