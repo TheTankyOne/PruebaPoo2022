@@ -1,5 +1,6 @@
 from datetime import date
 
+
 class Persona():
     def __init__(self, nombre, fecha_nacimiento, rut):
         self.nombre = nombre
@@ -33,6 +34,12 @@ class Persona():
         value = 11 - sum([ int(a)*int(b)  for a,b in zip(str(rut).zfill(8), '32765432')])%11
         return {10: 'K', 11: '0'}.get(value, str(value))
 
+    def Edad(fecha_nacimiento):
+    today = date.today()
+    Edad = today.year - fecha_nacimiento,.year - ((today.month, today.day) < (fecha_nacimiento,.month, fecha_nacimiento,.day))
+    return Edad
+
+    
     def calcular_Edad(self, Edad):
         if Edad >= 18:
             print ("Es mayor de edad")
