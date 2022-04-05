@@ -29,6 +29,7 @@ class Cuenta():
             return
         else:
             print ("el nuevo monto es: " + (x+saldo)) 
+            saldo = (x+saldo)
     
     def retiro(self, saldo, x):
         print("ingrese el monto que quiera retirar: ")
@@ -38,6 +39,7 @@ class Cuenta():
             return
         else:
             print ("el nuevo monto es: " + (saldo-x)) 
+            saldo = (saldo-x)
     
 
     def  informacion_Cuenta(self, titular, saldo):
