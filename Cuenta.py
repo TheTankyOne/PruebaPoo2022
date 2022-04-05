@@ -1,3 +1,4 @@
+from re import X
 from Cliente import Cliente
 
 class Cuenta():
@@ -19,6 +20,15 @@ class Cuenta():
         self.saldo =saldo
     def set_movimientos(self, movimientos):
         self.movimientos =movimientos
+    
+    def deposito(self, saldo, x):
+        print("ingrese el monto que quiera depositar: ")
+        input (x)
+        if x <= 0:
+            print ("el monto no puede ser igual a 0")
+            return
+        else:
+            print ("el nuevo monto es: " + (x+saldo)) 
 
     def  informacion_Cuenta(self, titular, saldo):
         return print("El nombre es " + titular + " y el saldo es " + saldo)
