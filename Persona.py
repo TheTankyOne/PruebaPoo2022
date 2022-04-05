@@ -1,5 +1,4 @@
 from datetime import date
-from faulthandler import cancel_dump_traceback_later
 
 class Persona():
     def __init__(self, nombre, fecha_nacimiento, rut):
